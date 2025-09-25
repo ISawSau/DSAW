@@ -28,6 +28,7 @@
           // assignació noves variables si hi ha nom
           document.body.style.backgroundColor = "#222";
           jugades = 0;
+          document.querySelector(".player-score").innerText = jugades;
 
           lblNamePlayerObj.innerText = txtPlayerObj.value;
           lblMessageObj.innerText = "Comencem la partida!";
