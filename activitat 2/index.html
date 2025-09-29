@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8" />
+    <title>Pràctica RA6-FE - DOM i Classes CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=visibility" />
+</head>
+<body>
+    <main>
+
+        <!-- ACTIVITAT 1 - EVENTS -->
+        <section class="area-interactiva">
+            <p>Àrea Interactiva - Mou el ratolí per aquí!</p>
+        </section>
+
+        <section>
+            <button>Fes doble click!!</button>
+            <input type="text" placeholder="Escriu alguna cosa" />
+            <span id="icon-eye" class="material-symbols-outlined">visibility</span>
+        </section>
+
+        <section>
+            <button>mostra</button>
+            <button>amaga</button>
+        </section>
+
+        <section class="info-esdeveniments">
+            <!-- Aquí posarem tots els events que hem seleccionat. -->
+        </section>
+
+    </main>
+
+    <main class="container">
+
+        <!-- ACTIVITAT 2 - Classes CSS -->
+
+        <!-- Activitat 1: Afegir Classes -->
+        <section class="activitat">
+            <h2>1. Afegir Classes</h2>
+            <div class="info-estat">
+                <p>Cada vegada que es pulsa un dels botons s'aplicarà l'estil relacionat al botó a l'element Caixa Afegir.</p>
+                <p>A mesura que es van pulsant els botons s'aniran mantenint les classes que ja s'estan aplicant.</p>
+                <p>Al pulsar el botó 'Eliminar tot' es deixaran d'aplicar tots els estils.</p>
+                <p>La relació dels botons amb les classes de CSS son: <br>
+                    'Afegir Text Verd' -> text-verd <br>
+                    'Afegir Rotació' -> rotacio <br>
+                    'Afegir Marge' -> marge <br>
+                    'Afegir Radius' -> marge-radius <br>
+                </p>
+            </div>
+            <div id="caixa-afegir" class="caixa-afegir">
+                Caixa Afegir
+            </div>
+            <button id="afegir-verd">Afegir Text Verd</button>
+            <button id="afegir-rotacio">Afegir Rotació</button>
+            <button id="afegir-marge">Afegir Marge</button>
+            <button id="afegir-borda">Afegir Radius</button>
+            <button id="reset-afegir">Eliminar Tot</button>
+        </section>
+
+        <!-- Activitat 2: Toggle de Classes -->
+        <section class="activitat">
+            <h2>2. Toggle de Classes</h2>
+            <div class="info-estat">
+                <p>Cada vegada que es pula el botó 'Aplica/treu CSS' anirà commutant entre aplica o treure la classes 'activa' al div 'Caixa toggle'</p>
+                <p>Per defecte no té aplicada la classe 'activa'</p>
+                <p>Proposta de millora: Canviar el text del botó cada vegada que es pulsa.</p>
+            </div>
+            <div id="caixa-toggle" class="caixa-toggle">
+                Caixa Toggle
+            </div>
+            <button id="toggle-activa" class="boto-toggle">Aplica/treu CSS</button>
+        </section>
+
+        <!-- Activitat 3: Canvi de Classes CSS -->
+        <section class="activitat">
+            <h2>3. Canvi de Classes CSS</h2>
+            <div class="info-estat">
+                <p>Cada vegada que es pulsa el botó 'Canvia classe CSS' se li haurà d'aplicar al div 'Caixa Ciclica' una nova classe CSS</p>
+                <p>Per defecte té la classe estat-1, al clicar el botó se li aplicarà la classe estat-2 i l'estat-1 deixarà d'aplicar-se, igualment passarà amb l'estat-3 i finalment amb l'estat-4</p>
+                <p>Quan el div 'Caixa Ciclica' té la classe estat-4 i es pulsa el botó tornarà a aplicat la classe estat-1 i l'estat-4 deixarà d'aplicar-se.</p>
+                <p>Les classes d'estils per aquesta activitat son: .estat-1, .estat-2, .estat-3 i .estat-4</p>
+                <p>S'ha d'anar mostrant l'estat actual a través d'un number</p>
+            </div>
+            <div id="caixa-canvi-estat" class="estat-1">Caixa Ciclica</div>
+            <button id="boto-canvi-classe" class="boto-ciclic">Canvia classe CSS</button>
+            <button id="reset-ciclic" class="boto-reset">Reset</button>
+            <div class="info-estat">
+                Estat actual: <span id="info-ciclic">1</span>
+            </div>
+        </section>
+
+        <!-- Activitat 4: Galeria d'Imatges -->
+        <section class="activitat">
+            <h2>4. Galeria d’Imatges</h2>
+            <div class="contenidor-galeria">
+                <a href="#" class="enllac" target="_blank">
+                    <img src="" alt="Imatge" class="imatge">
+                </a>
+                <p class="comptador"></p>
+                <button class="boto-galeria">Següent imatge</button>
+            </div>
+        </section>
+
+        <!-- Activitat 5: Tasques Pendents -->
+        <section class="activitat">
+            <h2>5. Tasques Pendents</h2>
+            <div class="contenidor-tasques">
+                <input type="text" id="novaTasca" placeholder="Escriu una nova tasca" />
+                <button class="boto-afegir-tasca">Afegir Tasca</button>
+                <button class="boto-borrar-totes">Borrar Totes</button>
+            </div>
+            <div class="tasques-contanier"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

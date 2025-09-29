@@ -1,0 +1,239 @@
+/* ================= Estils Globals ================= */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+section {
+    margin: 10px 0;
+}
+
+.area-interactiva,
+.info-esdeveniments {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.info-esdeveniments {
+    background-color: #f3f0fa;
+    font-size: 0.9em;
+    color: #333;
+}
+
+button {
+    background-color: #d9f5ec;
+    border: none;
+    padding: 6px 12px;
+    margin-right: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #bde9db;
+}
+
+input {
+    padding: 5px;
+    margin-left: 5px;
+}
+
+#icon-eye {
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+/* ================= Activitat 2 ================= */
+
+/* Activitat 1 - Afegir */
+.caixa-afegir {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #28a745;
+    background-color: #d4edda;
+    transition: all 0.3s ease;
+}
+
+.text-verd {
+    color: #155724;
+}
+
+.rotacio {
+    transform: rotate(3deg);
+}
+
+.marge {
+    margin: 20px;
+    padding: 30px;
+}
+
+.marge-radius {
+    border-radius: 20px;
+}
+
+/* Activitat 2 - Toggle */
+.caixa-toggle {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #666;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.activa {
+    background-color: #6a11cb;
+    color: white;
+    border-color: #4d089a;
+    box-shadow: 0 4px 15px rgba(106, 17, 203, 0.3);
+    transform: translateY(-5px);
+}
+
+/* Activitat 3 - Canvi cíclic */
+.estat-1 {
+    background-color: #ff6b6b;
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #333;
+}
+
+.estat-2 {
+    background-color: #4ecdc4;
+    border-radius: 10px;
+    transform: rotate(-5deg);
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #333;
+}
+
+.estat-3 {
+    background-color: #ffe66d;
+    border-radius: 10px;
+    transform: rotate(10deg);
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #333;
+}
+
+.estat-4 {
+    background-color: #95e1d3;
+    border-radius: 10px;
+    transform: rotate(-10deg);
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #333;
+}
+
+/* Contenidor i botons de les activitats */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.activitat {
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+}
+
+.info-estat {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* ================= Activitat 4 - Galeria ================= */
+.contenidor-galeria {
+    text-align: center;
+}
+
+.imatge {
+    max-width: 200px;
+    display: block;
+    margin: 10px auto;
+}
+
+.comptador {
+    margin: 10px 0;
+}
+
+/* ================= Activitat 5 - Tasques ================= */
+.contenidor-tasques {
+    margin-bottom: 15px;
+}
+
+#novaTasca {
+    padding: 6px;
+    margin-right: 5px;
+}
+
+.tasques-contanier .tasca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fafafa;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.tasques-contanier .boto-borrar {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tasques-contanier .boto-borrar:hover {
+    background: #c0392b;
+}
